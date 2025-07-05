@@ -60,17 +60,17 @@ const Gallery = () => {
       
       <div className="pt-24 pb-16 px-4">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16 animate-fade-in">
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
+          <div className="text-center mb-12 md:mb-16 animate-fade-in">
+            <h1 className="section-title-mobile md:text-5xl font-bold text-white mb-6">
               Our <span className="text-gold">Gallery</span>
             </h1>
-            <p className="text-xl text-white/80 max-w-3xl mx-auto">
+            <p className="body-text-mobile text-white/80 max-w-3xl mx-auto px-4">
               See the amazing transformations of our furry clients. Each photo tells a story of care, love, and professional grooming.
             </p>
           </div>
 
           {/* Gallery Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
             {galleryImages.map((image) => (
               <div
                 key={image.id}

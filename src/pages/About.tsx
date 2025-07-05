@@ -8,13 +8,13 @@ const About = () => {
       
       <div className="pt-24 pb-16 px-4">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16 animate-fade-in">
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
+          <div className="text-center mb-12 md:mb-16 animate-fade-in">
+            <h1 className="section-title-mobile md:text-5xl font-bold text-white mb-6">
               About <span className="text-gold">Nicole</span>
             </h1>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-center">
             <div className="animate-fade-in">
               <div className="bg-gray-800 rounded-lg aspect-square overflow-hidden">
                 <img
@@ -26,7 +26,7 @@ const About = () => {
             </div>
 
             <div className="animate-fade-in space-y-6">
-              <div className="text-lg md:text-xl text-white/90 leading-relaxed space-y-6">
+              <div className="body-text-mobile text-white/90 leading-relaxed space-y-6 px-4 lg:px-0">
                 <p>
                   Hi, I'm Nicole, and I've been passionately grooming dogs for over 12 years. 
                   What started as a love for animals has blossomed into a boutique grooming 

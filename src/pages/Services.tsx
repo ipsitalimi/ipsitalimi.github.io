@@ -62,34 +62,34 @@ const Services = () => {
       
       <div className="pt-24 pb-16 px-4">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16 animate-fade-in">
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
+          <div className="text-center mb-12 md:mb-16 animate-fade-in">
+            <h1 className="section-title-mobile md:text-5xl font-bold text-white mb-6">
               Our <span className="text-gold">Services</span>
             </h1>
-            <p className="text-xl text-white/80 max-w-3xl mx-auto">
+            <p className="body-text-mobile text-white/80 max-w-3xl mx-auto px-4">
               Professional grooming services tailored to your dog's specific needs and your preferences
             </p>
           </div>
 
           {/* Grooming Services */}
-          <div className="mb-16">
-            <h2 className="text-3xl font-bold text-gold mb-8 text-center">
+          <div className="mb-12 md:mb-16">
+            <h2 className="section-title-mobile font-bold text-gold mb-6 md:mb-8 text-center">
               Grooming Services
             </h2>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
               {groomingServices.map((service, index) => (
                 <div
                   key={index}
-                  className="bg-dark-bg/60 p-6 rounded-lg border border-gold/20 card-hover"
+                  className="bg-dark-bg/60 p-4 md:p-6 rounded-lg border border-gold/20 card-hover"
                 >
-                  <h3 className="text-xl font-semibold text-white mb-3">
+                  <h3 className="text-lg md:text-xl font-semibold text-white mb-2 md:mb-3">
                     {service.title}
                   </h3>
-                  <p className="text-white/80 mb-4 leading-relaxed">
+                  <p className="text-white/80 text-sm md:text-base mb-3 md:mb-4 leading-relaxed">
                     {service.description}
                   </p>
-                  <div className="border-t border-gold/20 pt-4">
-                    <p className="text-gold font-semibold text-lg">
+                  <div className="border-t border-gold/20 pt-3 md:pt-4">
+                    <p className="text-gold font-semibold text-base md:text-lg">
                       {service.price}
                     </p>
                   </div>
@@ -99,24 +99,24 @@ const Services = () => {
           </div>
 
           {/* Dental Services */}
-          <div className="mb-16">
-            <h2 className="text-3xl font-bold text-gold mb-8 text-center">
+          <div className="mb-12 md:mb-16">
+            <h2 className="section-title-mobile font-bold text-gold mb-6 md:mb-8 text-center">
               Teeth Cleaning Services
             </h2>
-            <div className="grid md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
               {dentalServices.map((service, index) => (
                 <div
                   key={index}
-                  className="bg-dark-bg/60 p-6 rounded-lg border border-gold/20 card-hover"
+                  className="bg-dark-bg/60 p-4 md:p-6 rounded-lg border border-gold/20 card-hover"
                 >
-                  <h3 className="text-xl font-semibold text-white mb-3">
+                  <h3 className="text-lg md:text-xl font-semibold text-white mb-2 md:mb-3">
                     {service.title}
                   </h3>
-                  <p className="text-white/80 mb-4 leading-relaxed">
+                  <p className="text-white/80 text-sm md:text-base mb-3 md:mb-4 leading-relaxed">
                     {service.description}
                   </p>
-                  <div className="border-t border-gold/20 pt-4">
-                    <p className="text-gold font-semibold text-lg">
+                  <div className="border-t border-gold/20 pt-3 md:pt-4">
+                    <p className="text-gold font-semibold text-base md:text-lg">
                       {service.price}
                     </p>
                   </div>
@@ -126,16 +126,16 @@ const Services = () => {
           </div>
 
           {/* Add-ons and Extras */}
-          <div className="mb-16">
-            <h2 className="text-3xl font-bold text-gold mb-8 text-center">
+          <div className="mb-12 md:mb-16">
+            <h2 className="section-title-mobile font-bold text-gold mb-6 md:mb-8 text-center">
               Add-On Services
             </h2>
-            <div className="bg-dark-bg/60 p-8 rounded-lg border border-gold/20 max-w-4xl mx-auto">
-              <div className="grid md:grid-cols-2 gap-4">
+            <div className="bg-dark-bg/60 p-6 md:p-8 rounded-lg border border-gold/20 max-w-4xl mx-auto">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4">
                 {extras.map((extra, index) => (
                   <div key={index} className="flex justify-between items-center py-2 border-b border-white/10 last:border-b-0">
-                    <span className="text-white">{extra.service}</span>
-                    <span className="text-gold font-semibold">{extra.price}</span>
+                    <span className="text-white text-sm md:text-base">{extra.service}</span>
+                    <span className="text-gold font-semibold text-sm md:text-base">{extra.price}</span>
                   </div>
                 ))}
               </div>
@@ -143,9 +143,9 @@ const Services = () => {
           </div>
 
           {/* Policies */}
-          <div className="text-center bg-black/20 p-8 rounded-lg">
-            <h3 className="text-2xl font-bold text-gold mb-4">Important Notes</h3>
-            <div className="text-white/80 space-y-3 max-w-3xl mx-auto">
+          <div className="text-center bg-black/20 p-6 md:p-8 rounded-lg">
+            <h3 className="text-xl md:text-2xl font-bold text-gold mb-4">Important Notes</h3>
+            <div className="text-white/80 space-y-3 max-w-3xl mx-auto text-sm md:text-base">
               <p>
                 <strong className="text-gold">Matting Fee:</strong> Dogs with severe matting may require 
                 additional time and care. A $15-30 fee may apply depending on severity.

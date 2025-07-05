@@ -59,56 +59,56 @@ const Reviews = () => {
       
       <div className="pt-24 pb-16 px-4">
         <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-16 animate-fade-in">
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
+          <div className="text-center mb-12 md:mb-16 animate-fade-in">
+            <h1 className="section-title-mobile md:text-5xl font-bold text-white mb-6">
               Client <span className="text-gold">Reviews</span>
             </h1>
-            <p className="text-xl text-white/80">
+            <p className="body-text-mobile text-white/80 px-4">
               Here's what our clients are saying about their grooming experience
             </p>
           </div>
 
           {/* Reviews List */}
-          <div className="space-y-8">
+          <div className="space-y-6 md:space-y-8">
             {reviews.map((review) => (
               <div
                 key={review.id}
-                className="bg-dark-bg/60 p-8 rounded-lg border border-gold/20 card-hover animate-fade-in"
+                className="bg-dark-bg/60 p-6 md:p-8 rounded-lg border border-gold/20 card-hover animate-fade-in"
               >
-                <div className="flex items-start space-x-4">
+                <div className="flex items-start space-x-3 md:space-x-4">
                   {/* Dog Photo */}
                   <div className="flex-shrink-0">
                     <img
                       src={review.dogPhoto}
                       alt={`${review.name}'s dog`}
-                      className="w-16 h-16 rounded-full object-cover border-2 border-gold/30"
+                      className="w-12 h-12 md:w-16 md:h-16 rounded-full object-cover border-2 border-gold/30"
                     />
                   </div>
 
                   {/* Review Content */}
-                  <div className="flex-1">
-                    <div className="flex items-center justify-between mb-3">
-                      <h3 className="text-xl font-semibold text-white">
+                  <div className="flex-1 min-w-0">
+                    <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-3 gap-2">
+                      <h3 className="text-lg md:text-xl font-semibold text-white truncate">
                         {review.name}
                       </h3>
-                      <div className="flex items-center space-x-2">
+                      <div className="flex items-center space-x-2 flex-shrink-0">
                         {/* Star Rating */}
                         <div className="flex space-x-1">
                           {[...Array(review.rating)].map((_, i) => (
                             <svg
                               key={i}
-                              className="w-5 h-5 text-gold fill-current"
+                              className="w-4 h-4 md:w-5 md:h-5 text-gold fill-current"
                               viewBox="0 0 20 20"
                             >
                               <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                             </svg>
                           ))}
                         </div>
-                        <span className="text-white/60 text-sm">{review.date}</span>
+                        <span className="text-white/60 text-xs md:text-sm">{review.date}</span>
                       </div>
                     </div>
 
-                    <p className="text-white/90 leading-relaxed">
+                    <p className="text-white/90 text-sm md:text-base leading-relaxed">
                       {review.text}
                     </p>
                   </div>
@@ -118,16 +118,16 @@ const Reviews = () => {
           </div>
 
           {/* Call to Action */}
-          <div className="text-center mt-16 p-8 bg-black/20 rounded-lg">
-            <h3 className="text-2xl font-bold text-gold mb-4">
+          <div className="text-center mt-12 md:mt-16 p-6 md:p-8 bg-black/20 rounded-lg">
+            <h3 className="text-xl md:text-2xl font-bold text-gold mb-4">
               Ready to Join Our Happy Clients?
             </h3>
-            <p className="text-white/80 mb-6">
+            <p className="text-white/80 text-sm md:text-base mb-6 px-4">
               Book your appointment today and see why our clients love bringing their dogs to us!
             </p>
             <a
               href="/contact"
-              className="btn-gold text-lg"
+              className="btn-gold-mobile"
             >
               Schedule Appointment
             </a>
