@@ -1,50 +1,34 @@
-
 import Navigation from "@/components/Navigation";
 import { Link } from "react-router-dom";
-
 const Index = () => {
-  const services = [
-    {
-      title: "Full Grooming",
-      description: "Complete spa treatment including wash, cut, and styling",
-      price: "From $45"
-    },
-    {
-      title: "Teeth Cleaning",
-      description: "Professional dental care for your pet's oral health",
-      price: "From $25"
-    },
-    {
-      title: "Nail Trimming",
-      description: "Safe and gentle nail care service",
-      price: "From $15"
-    }
-  ];
-
-  const testimonials = [
-    {
-      text: "Nicole is absolutely amazing! My dog comes out looking like a show dog every time. She's so gentle and caring.",
-      author: "Sarah M."
-    },
-    {
-      text: "Best groomer in town! Professional, affordable, and my pup actually enjoys going there now.",
-      author: "Mike R."
-    }
-  ];
-
-  return (
-    <div className="min-h-screen bg-dark-bg">
+  const services = [{
+    title: "Full Grooming",
+    description: "Complete spa treatment including wash, cut, and styling",
+    price: "From $45"
+  }, {
+    title: "Teeth Cleaning",
+    description: "Professional dental care for your pet's oral health",
+    price: "From $25"
+  }, {
+    title: "Nail Trimming",
+    description: "Safe and gentle nail care service",
+    price: "From $15"
+  }];
+  const testimonials = [{
+    text: "Nicole is absolutely amazing! My dog comes out looking like a show dog every time. She's so gentle and caring.",
+    author: "Sarah M."
+  }, {
+    text: "Best groomer in town! Professional, affordable, and my pup actually enjoys going there now.",
+    author: "Mike R."
+  }];
+  return <div className="min-h-screen bg-dark-bg">
       <Navigation />
       
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center text-center px-4">
         <div className="max-w-4xl mx-auto animate-fade-in">
           <div className="mb-8">
-            <img 
-              src="/lovable-uploads/c47f6374-7ad2-465d-bbfb-046c5aed3ab1.png" 
-              alt="CoatbyCole Logo" 
-              className="h-24 w-24 mx-auto mb-6 opacity-90"
-            />
+            
           </div>
           <h1 className="hero-title-mobile font-bold text-white mb-6 leading-tight">
             Premier <span className="text-gradient">Dog Grooming</span>
@@ -77,11 +61,7 @@ const Index = () => {
           
           {/* Desktop Grid */}
           <div className="hidden md:grid md:grid-cols-3 gap-8">
-            {services.map((service, index) => (
-              <div
-                key={index}
-                className="bg-dark-bg/60 p-8 rounded-lg border border-gold/20 card-hover text-center group"
-              >
+            {services.map((service, index) => <div key={index} className="bg-dark-bg/60 p-8 rounded-lg border border-gold/20 card-hover text-center group">
                 <h3 className="text-xl font-semibold text-gold mb-4 group-hover:text-white transition-colors duration-300">
                   {service.title}
                 </h3>
@@ -90,18 +70,13 @@ const Index = () => {
                 <Link to="/services" className="btn-gold">
                   Learn More
                 </Link>
-              </div>
-            ))}
+              </div>)}
           </div>
 
           {/* Mobile Carousel */}
           <div className="md:hidden carousel-container">
             <div className="carousel-scroll px-4">
-              {services.map((service, index) => (
-                <div
-                  key={index}
-                  className="carousel-item bg-dark-bg/60 p-6 rounded-lg border border-gold/20 text-center"
-                >
+              {services.map((service, index) => <div key={index} className="carousel-item bg-dark-bg/60 p-6 rounded-lg border border-gold/20 text-center">
                   <h3 className="text-lg font-semibold text-gold mb-3">
                     {service.title}
                   </h3>
@@ -110,8 +85,7 @@ const Index = () => {
                   <Link to="/services" className="btn-gold text-sm px-4 py-2">
                     Learn More
                   </Link>
-                </div>
-              ))}
+                </div>)}
             </div>
           </div>
         </div>
@@ -126,29 +100,17 @@ const Index = () => {
           
           {/* Desktop Grid */}
           <div className="hidden sm:grid grid-cols-2 md:grid-cols-4 gap-4 mb-8 md:mb-12">
-            {[1, 2, 3, 4].map((i) => (
-              <div key={i} className="aspect-square bg-gray-800 rounded-lg overflow-hidden card-hover">
-                <img
-                  src={`https://images.unsplash.com/photo-158256212481${i}-c09040d0a901?w=300&h=300&fit=crop`}
-                  alt={`Groomed dog ${i}`}
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            ))}
+            {[1, 2, 3, 4].map(i => <div key={i} className="aspect-square bg-gray-800 rounded-lg overflow-hidden card-hover">
+                <img src={`https://images.unsplash.com/photo-158256212481${i}-c09040d0a901?w=300&h=300&fit=crop`} alt={`Groomed dog ${i}`} className="w-full h-full object-cover" />
+              </div>)}
           </div>
 
           {/* Mobile Carousel */}
           <div className="sm:hidden carousel-container mb-8">
             <div className="carousel-scroll px-4">
-              {[1, 2, 3, 4].map((i) => (
-                <div key={i} className="carousel-item aspect-square bg-gray-800 rounded-lg overflow-hidden">
-                  <img
-                    src={`https://images.unsplash.com/photo-158256212481${i}-c09040d0a901?w=300&h=300&fit=crop`}
-                    alt={`Groomed dog ${i}`}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              ))}
+              {[1, 2, 3, 4].map(i => <div key={i} className="carousel-item aspect-square bg-gray-800 rounded-lg overflow-hidden">
+                  <img src={`https://images.unsplash.com/photo-158256212481${i}-c09040d0a901?w=300&h=300&fit=crop`} alt={`Groomed dog ${i}`} className="w-full h-full object-cover" />
+                </div>)}
             </div>
           </div>
           
@@ -167,27 +129,23 @@ const Index = () => {
           
           {/* Desktop Grid */}
           <div className="hidden md:grid md:grid-cols-2 gap-8">
-            {testimonials.map((testimonial, index) => (
-              <div key={index} className="bg-dark-bg/60 p-8 rounded-lg border border-gold/20">
+            {testimonials.map((testimonial, index) => <div key={index} className="bg-dark-bg/60 p-8 rounded-lg border border-gold/20">
                 <p className="text-white/90 text-lg mb-4 italic">
                   "{testimonial.text}"
                 </p>
                 <p className="text-gold font-medium">- {testimonial.author}</p>
-              </div>
-            ))}
+              </div>)}
           </div>
 
           {/* Mobile Carousel */}
           <div className="md:hidden carousel-container">
             <div className="carousel-scroll px-4">
-              {testimonials.map((testimonial, index) => (
-                <div key={index} className="carousel-item bg-dark-bg/60 p-6 rounded-lg border border-gold/20">
+              {testimonials.map((testimonial, index) => <div key={index} className="carousel-item bg-dark-bg/60 p-6 rounded-lg border border-gold/20">
                   <p className="text-white/90 text-base mb-4 italic leading-relaxed">
                     "{testimonial.text}"
                   </p>
                   <p className="text-gold font-medium">- {testimonial.author}</p>
-                </div>
-              ))}
+                </div>)}
             </div>
           </div>
         </div>
@@ -217,11 +175,7 @@ const Index = () => {
       <footer className="py-8 px-4 border-t border-gold/20">
         <div className="max-w-6xl mx-auto text-center">
           <div className="flex items-center justify-center mb-4">
-            <img 
-              src="/lovable-uploads/c47f6374-7ad2-465d-bbfb-046c5aed3ab1.png" 
-              alt="CoatbyCole Logo" 
-              className="h-8 w-8 mr-3 opacity-70"
-            />
+            <img src="/lovable-uploads/c47f6374-7ad2-465d-bbfb-046c5aed3ab1.png" alt="CoatbyCole Logo" className="h-8 w-8 mr-3 opacity-70" />
             <span className="text-gold font-semibold">CoatbyCole</span>
           </div>
           <p className="text-white/60">
@@ -229,8 +183,6 @@ const Index = () => {
           </p>
         </div>
       </footer>
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
