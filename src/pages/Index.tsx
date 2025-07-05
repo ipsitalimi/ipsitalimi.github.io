@@ -39,6 +39,13 @@ const Index = () => {
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center text-center px-4">
         <div className="max-w-4xl mx-auto animate-fade-in">
+          <div className="mb-8">
+            <img 
+              src="/lovable-uploads/c47f6374-7ad2-465d-bbfb-046c5aed3ab1.png" 
+              alt="CoatbyCole Logo" 
+              className="h-24 w-24 mx-auto mb-6 opacity-90"
+            />
+          </div>
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
             Premier <span className="text-gradient">Dog Grooming</span>
           </h1>
@@ -150,6 +157,14 @@ const Index = () => {
       {/* Footer */}
       <footer className="py-8 px-4 border-t border-gold/20">
         <div className="max-w-6xl mx-auto text-center">
+          <div className="flex items-center justify-center mb-4">
+            <img 
+              src="/lovable-uploads/c47f6374-7ad2-465d-bbfb-046c5aed3ab1.png" 
+              alt="CoatbyCole Logo" 
+              className="h-8 w-8 mr-3 opacity-70"
+            />
+            <span className="text-gold font-semibold">CoatbyCole</span>
+          </div>
           <p className="text-white/60">
             © 2024 Paws & Polish. Made with ❤️ for our furry friends.
           </p>
