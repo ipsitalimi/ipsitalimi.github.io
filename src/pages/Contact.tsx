@@ -1,4 +1,3 @@
-
 import Navigation from "@/components/Navigation";
 
 const Contact = () => {
@@ -10,11 +9,11 @@ const Contact = () => {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12 md:mb-16 animate-fade-in">
             <h1 className="section-title-mobile md:text-5xl font-bold text-white mb-6">
-              Get In <span className="text-gold">Touch</span>
+              Get In <span className="gold-shine">Touch</span>
             </h1>
             <p className="body-text-mobile text-white/80 max-w-3xl mx-auto mb-8 md:mb-12 px-4">
-              Ready to book an appointment? Message me on Facebook or text me directly to schedule. 
-              Text messages are preferred for faster response times.
+              We respond within 24 hours — though occasionally, life (and dogs) get in the way! 🐾
+              Please book 6–8 weeks in advance — we're in high demand and can't wait to pamper your pooch.
             </p>
           </div>
 
@@ -32,7 +31,7 @@ const Contact = () => {
                 Send me a message on Facebook for appointments and questions
               </p>
               <a
-                href="https://facebook.com/pawsandpolishgrooming"
+                href="https://www.facebook.com/profile.php?id=61556352770769&mibextid=ZbWKwL"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-gold text-sm md:text-base"
@@ -53,10 +52,10 @@ const Contact = () => {
                 Text me directly for the fastest response (preferred method)
               </p>
               <a
-                href="sms:+15551234567"
+                href="sms:+61413247210"
                 className="btn-gold text-sm md:text-base"
               >
-                Text: (555) 123-4567
+                Text: +61 413 247 210
               </a>
             </div>
           </div>
@@ -65,34 +64,60 @@ const Contact = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mb-12 md:mb-16">
             {/* Hours */}
             <div className="bg-dark-bg/60 p-6 md:p-8 rounded-lg border border-gold/20">
-              <h3 className="text-xl md:text-2xl font-semibold text-gold mb-4 md:mb-6 text-center">Business Hours</h3>
-              <div className="space-y-2 md:space-y-3">
+              <h3 className="text-xl md:text-2xl font-semibold gold-shine mb-4 md:mb-6 text-center">Salon Hours</h3>
+              <div className="space-y-2 md:space-y-3 mb-6">
                 <div className="flex justify-between items-center py-2 border-b border-white/10 text-sm md:text-base">
                   <span className="text-white">Monday - Friday</span>
-                  <span className="text-gold">9:00 AM - 6:00 PM</span>
+                  <span className="text-gold">9:00 AM - 4:00 PM</span>
                 </div>
+                <div className="flex justify-between items-center py-2 text-sm md:text-base">
+                  <span className="text-white">Saturday - Sunday</span>
+                  <span className="text-gold">Closed</span>
+                </div>
+                <div className="text-xs text-white/60 text-center mt-2">
+                  (Only Open for appointments and services, no walk-ins)
+                </div>
+              </div>
+              
+              <h4 className="text-lg md:text-xl font-semibold gold-shine mb-3 md:mb-4 text-center">Appointment Booking Hours (By Phone)</h4>
+              <div className="space-y-2 md:space-y-3">
                 <div className="flex justify-between items-center py-2 border-b border-white/10 text-sm md:text-base">
-                  <span className="text-white">Saturday</span>
+                  <span className="text-white">Monday - Saturday</span>
                   <span className="text-gold">8:00 AM - 4:00 PM</span>
                 </div>
                 <div className="flex justify-between items-center py-2 text-sm md:text-base">
                   <span className="text-white">Sunday</span>
                   <span className="text-gold">Closed</span>
                 </div>
+                <div className="text-xs text-white/60 text-center mt-2">
+                  (For inquiries and scheduling only — salon may be closed during these times)
+                </div>
               </div>
             </div>
 
             {/* Location */}
             <div className="bg-dark-bg/60 p-6 md:p-8 rounded-lg border border-gold/20">
-              <h3 className="text-xl md:text-2xl font-semibold text-gold mb-4 md:mb-6 text-center">Location</h3>
+              <h3 className="text-xl md:text-2xl font-semibold gold-shine mb-4 md:mb-6 text-center">Location</h3>
               <div className="text-center space-y-3 md:space-y-4">
                 <div className="text-sm md:text-base">
-                  <p className="text-white font-medium">Paws & Polish Grooming</p>
-                  <p className="text-white/80">123 Main Street</p>
-                  <p className="text-white/80">Your City, State 12345</p>
+                  <p className="text-white font-medium">Coat by Cole</p>
+                  <p className="text-white/80">21 Riverland Drive</p>
+                  <p className="text-white/80">Stake Hill, Perth, WA 6181</p>
+                  <p className="text-white/80">Australia</p>
                 </div>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3407.4821969855765!2d115.773354915136!3d-32.49572788096252!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2a32751c04a8a8e3%3A0xa6160fd2f9c368b7!2s21%20Riverland%20Dr%2C%20Stake%20Hill%20WA%206181%2C%20Australia!5e0!3m2!1sen!2sin!4v1720271200000!5m2!1sen!2sin"
+                  width="100%"
+                  height="200"
+                  style={{ border: 0, borderRadius: '0.75rem' }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  className="w-full"
+                  title="Coat by Cole Location"
+                ></iframe>
                 <a
-                  href="https://maps.google.com/?q=123+Main+Street+Your+City+State"
+                  href="https://maps.google.com/?q=21+Riverland+Drive+Stake+Hill+Perth+WA+6181+Australia"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn-gold inline-block text-sm md:text-base"
@@ -105,20 +130,12 @@ const Contact = () => {
 
           {/* Booking Information */}
           <div className="bg-black/20 p-6 md:p-8 rounded-lg text-center">
-            <h3 className="text-xl md:text-2xl font-bold text-gold mb-4">Booking Information</h3>
-            <div className="text-white/80 space-y-2 md:space-y-3 max-w-2xl mx-auto text-sm md:text-base">
-              <p>
-                🐕 <strong>Please include:</strong> Your dog's name, breed, size, and preferred appointment time
-              </p>
-              <p>
-                ⏰ <strong>Response Time:</strong> I typically respond within 2-4 hours during business days
-              </p>
-              <p>
-                📅 <strong>Advance Booking:</strong> I recommend booking 1-2 weeks in advance, especially for weekends
-              </p>
-              <p>
-                🚨 <strong>Emergency Grooming:</strong> Same-day appointments may be available - just ask!
-              </p>
+            <h3 className="text-xl md:text-2xl font-bold gold-shine mb-4">Booking Information</h3>
+            <div className="text-white/80 space-y-4 max-w-2xl mx-auto text-sm md:text-base text-center">
+              <p><strong>Please include:</strong> Your dog's name, breed, size, and preferred appointment time</p>
+              <p><strong>Response Time:</strong> We respond within 24 hours — though occasionally, life (and dogs) get in the way! </p>
+              <p><strong>Advance Booking:</strong> Please book 6–8 weeks in advance — we're in high demand and can't wait to pamper your pooch</p>
+              <p><strong>Appointment Hours:</strong> Monday to Saturday, 8:00 AM – 4:00 PM (Phone Only)</p>
             </div>
           </div>
         </div>

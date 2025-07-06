@@ -1,164 +1,124 @@
-
 import Navigation from "@/components/Navigation";
+import { Link } from "react-router-dom";
+
+const groomingServices = [
+  {
+    title: "Comfort Clip",
+    description: "13mm or shorter, one length all over. Nails clipped, ears cleaned.",
+    prices: [
+      { size: "Small (under 9kg)", price: "$85" },
+      { size: "Medium (9–15kg)", price: "$95" },
+      { size: "Large (15–22kg)", price: "$110" },
+      { size: "XL (22kg+)", price: "$130" },
+    ],
+  },
+  {
+    title: "Full Groom",
+    description: "13mm or shorter with a longer/fluffy head. Nails clipped, ears cleaned.",
+    prices: [
+      { size: "Small (under 9kg)", price: "$90" },
+      { size: "Medium (9–15kg)", price: "$110" },
+      { size: "Large (15–22kg)", price: "$140" },
+      { size: "XL (22kg+)", price: "$180" },
+    ],
+  },
+  {
+    title: "Style Groom / Breed Clip",
+    description: "13mm or longer, style of choice. Nails clipped, ears cleaned.",
+    prices: [
+      { size: "Small (under 9kg)", price: "$100" },
+      { size: "Medium (9–15kg)", price: "$120" },
+      { size: "Large (15–22kg)", price: "$150" },
+      { size: "XL (22kg+)", price: "$200" },
+    ],
+  },
+  {
+    title: "Hygiene Groom",
+    description: "Warm bath, blow dry, nails, face trim, paw pads shaved, bum and underneath trimmed.",
+    priceNote: "Prices are $15 less than the Full Groom price.",
+  },
+  {
+    title: "Wash & Blow Dry",
+    description: "",
+    prices: [
+      { size: "Small", price: "$35" },
+      { size: "Medium", price: "$45" },
+      { size: "Large", price: "$55" },
+      { size: "XL", price: "$70" },
+    ],
+  },
+  {
+    title: "Wash & Towel Dry",
+    description: "",
+    prices: [
+      { size: "Small", price: "$20" },
+      { size: "Medium", price: "$30" },
+      { size: "Large", price: "$40" },
+      { size: "XL", price: "$45" },
+    ],
+  },
+  {
+    title: "De-shedding",
+    description: "For de-shedding prices, please message me directly.",
+  },
+];
 
 const Services = () => {
-  const groomingServices = [
-    {
-      title: "Full Service Grooming",
-      description: "Complete bath, blow dry, nail trim, ear cleaning, and breed-specific cut",
-      price: "From $45"
-    },
-    {
-      title: "Bath & Brush",
-      description: "Thorough wash with premium shampoo, conditioning treatment, and brush out",
-      price: "From $30"
-    },
-    {
-      title: "Puppy Introduction",
-      description: "Gentle first grooming experience for puppies 4-6 months old",
-      price: "From $35"
-    },
-    {
-      title: "Senior Dog Special",
-      description: "Extra gentle care for older dogs with mobility or health concerns",
-      price: "From $40"
-    },
-    {
-      title: "De-shedding Treatment",
-      description: "Specialized treatment to reduce shedding and promote healthy coat",
-      price: "From $25"
-    }
-  ];
-
-  const dentalServices = [
-    {
-      title: "Basic Teeth Cleaning",
-      description: "Gentle brushing and plaque removal for maintaining oral health",
-      price: "From $25"
-    },
-    {
-      title: "Deep Dental Clean",
-      description: "Thorough cleaning including gum line and hard-to-reach areas",
-      price: "From $40"
-    },
-    {
-      title: "Breath Freshening",
-      description: "Quick clean with breath spray for fresher kisses",
-      price: "From $15"
-    }
-  ];
-
-  const extras = [
-    { service: "Nail Trimming", price: "$15" },
-    { service: "Ear Cleaning", price: "$10" },
-    { service: "Anal Gland Expression", price: "$15" },
-    { service: "Flea Treatment", price: "$20" },
-    { service: "Creative Coloring", price: "$30+" }
-  ];
-
   return (
-    <div className="min-h-screen bg-dark-bg">
+    <div className="min-h-screen bg-black font-['Playfair_Display']">
       <Navigation />
-      
       <div className="pt-24 pb-16 px-4">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12 md:mb-16 animate-fade-in">
-            <h1 className="section-title-mobile md:text-5xl font-bold text-white mb-6">
-              Our <span className="text-gold">Services</span>
-            </h1>
-            <p className="body-text-mobile text-white/80 max-w-3xl mx-auto px-4">
-              Professional grooming services tailored to your dog's specific needs and your preferences
-            </p>
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-12 animate-fade-in">
+            <h1 className="text-4xl md:text-5xl font-bold gold-shine mb-4 tracking-tight">Our Services</h1>
+            <div className="w-16 h-1 bg-gold mx-auto mb-6 rounded" />
+            <p className="text-white/80 text-lg max-w-2xl mx-auto">Clean, elegant, and tailored for your pup's comfort.</p>
           </div>
 
-          {/* Grooming Services */}
-          <div className="mb-12 md:mb-16">
-            <h2 className="section-title-mobile font-bold text-gold mb-6 md:mb-8 text-center">
-              Grooming Services
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
-              {groomingServices.map((service, index) => (
+          {/* Grooming Services Section */}
+          <section className="mb-16">
+            <h2 className="text-2xl md:text-3xl font-bold gold-shine mb-8">Grooming Services</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-8 md:gap-y-12">
+              {groomingServices.map((service, idx) => (
                 <div
-                  key={index}
-                  className="bg-dark-bg/60 p-4 md:p-6 rounded-lg border border-gold/20 card-hover"
+                  key={service.title}
+                  className="bg-black border border-gold rounded-xl shadow-lg shadow-gold/10 p-7 transition-transform hover:scale-[1.025] hover:shadow-xl hover:shadow-gold/20 group hover:border-gold/90 hover:text-gold"
                 >
-                  <h3 className="text-lg md:text-xl font-semibold text-white mb-2 md:mb-3">
-                    {service.title}
-                  </h3>
-                  <p className="text-white/80 text-sm md:text-base mb-3 md:mb-4 leading-relaxed">
-                    {service.description}
-                  </p>
-                  <div className="border-t border-gold/20 pt-3 md:pt-4">
-                    <p className="text-gold font-semibold text-base md:text-lg">
-                      {service.price}
-                    </p>
-                  </div>
+                  <h3 className="text-xl font-bold gold-shine mb-2 group-hover:text-white transition-colors">{service.title}</h3>
+                  {service.description && (
+                    <p className="text-white/80 mb-3 text-base whitespace-pre-line">{service.description}</p>
+                  )}
+                  {service.prices && (
+                    <table className="w-full text-left mb-2">
+                      <tbody>
+                        {service.prices.map((p, i) => (
+                          <tr key={i}>
+                            <td className="py-1 pr-8 text-white/70 text-sm font-medium">{p.size}</td>
+                            <td className="py-1 gold-shine text-sm font-semibold">{p.price}</td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  )}
+                  {service.priceNote && (
+                    <div className="italic text-gold/80 text-sm mb-1">{service.priceNote}</div>
+                  )}
                 </div>
               ))}
             </div>
-          </div>
-
-          {/* Dental Services */}
-          <div className="mb-12 md:mb-16">
-            <h2 className="section-title-mobile font-bold text-gold mb-6 md:mb-8 text-center">
-              Teeth Cleaning Services
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
-              {dentalServices.map((service, index) => (
-                <div
-                  key={index}
-                  className="bg-dark-bg/60 p-4 md:p-6 rounded-lg border border-gold/20 card-hover"
-                >
-                  <h3 className="text-lg md:text-xl font-semibold text-white mb-2 md:mb-3">
-                    {service.title}
-                  </h3>
-                  <p className="text-white/80 text-sm md:text-base mb-3 md:mb-4 leading-relaxed">
-                    {service.description}
-                  </p>
-                  <div className="border-t border-gold/20 pt-3 md:pt-4">
-                    <p className="text-gold font-semibold text-base md:text-lg">
-                      {service.price}
-                    </p>
-                  </div>
-                </div>
-              ))}
+            <div className="mt-8 text-white/70 text-sm md:text-base text-center">
+              <div className="mb-2">Note: Prices may vary depending on oodle breeds and coat conditions.</div>
             </div>
-          </div>
+          </section>
 
-          {/* Add-ons and Extras */}
-          <div className="mb-12 md:mb-16">
-            <h2 className="section-title-mobile font-bold text-gold mb-6 md:mb-8 text-center">
-              Add-On Services
-            </h2>
-            <div className="bg-dark-bg/60 p-6 md:p-8 rounded-lg border border-gold/20 max-w-4xl mx-auto">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4">
-                {extras.map((extra, index) => (
-                  <div key={index} className="flex justify-between items-center py-2 border-b border-white/10 last:border-b-0">
-                    <span className="text-white text-sm md:text-base">{extra.service}</span>
-                    <span className="text-gold font-semibold text-sm md:text-base">{extra.price}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-
-          {/* Policies */}
-          <div className="text-center bg-black/20 p-6 md:p-8 rounded-lg">
-            <h3 className="text-xl md:text-2xl font-bold text-gold mb-4">Important Notes</h3>
-            <div className="text-white/80 space-y-3 max-w-3xl mx-auto text-sm md:text-base">
-              <p>
-                <strong className="text-gold">Matting Fee:</strong> Dogs with severe matting may require 
-                additional time and care. A $15-30 fee may apply depending on severity.
-              </p>
-              <p>
-                <strong className="text-gold">Cancellation Policy:</strong> Please provide at least 
-                24 hours notice for cancellations to avoid a $20 fee.
-              </p>
-              <p>
-                <strong className="text-gold">Health Requirements:</strong> All dogs must be up to date 
-                on vaccinations and flea-free for the safety of all pets.
-              </p>
-            </div>
+          {/* Book Now Button */}
+          <div className="flex justify-center mt-16">
+            <Link
+              to="/contact"
+              className="px-8 py-3 rounded-full bg-gold text-black font-bold text-lg shadow-md transition hover:bg-black hover:text-gold hover:border hover:border-gold hover:scale-105 focus:outline-none focus:ring-2 focus:ring-gold"
+            >
+              Book Now
+            </Link>
           </div>
         </div>
       </div>

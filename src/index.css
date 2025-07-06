@@ -1,4 +1,3 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -9,13 +8,13 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 4%;
+    --background: 0 0% 0%;
     --foreground: 0 0% 95%;
 
-    --card: 0 0% 4%;
+    --card: 0 0% 0%;
     --card-foreground: 0 0% 95%;
 
-    --popover: 0 0% 4%;
+    --popover: 0 0% 0%;
     --popover-foreground: 0 0% 95%;
 
     --primary: 45 85% 54%;
@@ -39,7 +38,7 @@ All colors MUST be HSL.
 
     --radius: 0.5rem;
 
-    --sidebar-background: 0 0% 4%;
+    --sidebar-background: 0 0% 0%;
     --sidebar-foreground: 0 0% 95%;
     --sidebar-primary: 45 85% 54%;
     --sidebar-primary-foreground: 0 0% 4%;
@@ -86,9 +85,9 @@ All colors MUST be HSL.
     @apply fixed top-0 left-0 w-full h-full bg-dark-bg/95 backdrop-blur-md z-50 flex flex-col justify-center items-center space-y-8;
   }
 
-  /* Mobile section spacing */
+  /* Mobile section spacing - reduced for tighter mobile layout */
   .section-mobile {
-    @apply py-12 md:py-20;
+    @apply py-2 md:py-20;
   }
 
   /* Carousel styles for mobile */
@@ -127,5 +126,21 @@ All colors MUST be HSL.
 
   .body-text-mobile {
     @apply text-base sm:text-lg md:text-xl;
+  }
+
+  /* Shine effect for gold text titles */
+  .gold-shine {
+    @apply bg-gradient-to-r from-gold via-yellow-200 to-gold bg-clip-text text-transparent;
+    background-size: 200% auto;
+    animation: shine 2s linear infinite;
+  }
+
+  @keyframes shine {
+    0% {
+      background-position: 200% center;
+    }
+    100% {
+      background-position: -200% center;
+    }
   }
 }

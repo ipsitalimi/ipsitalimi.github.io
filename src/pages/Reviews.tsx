@@ -1,56 +1,56 @@
-
 import Navigation from "@/components/Navigation";
 
 const Reviews = () => {
   const reviews = [
     {
       id: 1,
-      name: "Sarah Mitchell",
+      name: "Bec Mullins",
       rating: 5,
-      text: "Nicole is absolutely amazing! My golden retriever Max has been going to her for 2 years now and he actually gets excited when we pull up to the salon. She takes such great care of him and he always comes out looking like a show dog. Highly recommend!",
-      date: "2 weeks ago",
-      dogPhoto: "https://images.unsplash.com/photo-1552053831-71594a27632d?w=120&h=120&fit=crop"
+      text: "My 2 Oodles visited Nicole today and I'm delighted with the results! Franki the Groodle's first groom was a huge success and Albie the Moodle came home pretty happy with himself. I loved that Nicole listened to my requests and worked so well with my boys. We will be back, and I won't hesitate to recommend her. Thanks a million, Nicole!",
+      date: "3 weeks ago"
     },
     {
       id: 2,
-      name: "Mike Rodriguez",
+      name: "Karina Storen",
       rating: 5,
-      text: "Best groomer in town! My rescue pit bull was terrified of grooming when I first adopted him. Nicole was so patient and gentle with him. Now he loves going there and looks forward to his spa days. Professional, affordable, and genuinely cares about the dogs.",
-      date: "1 month ago",
-      dogPhoto: "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=120&h=120&fit=crop"
+      text: "Nicole goes above & beyond!! I can't recommend her highly enough. A beautiful, welcoming set-up for her furry clients, complete with treats. She takes time, she takes care & she takes notice. Humans are made to feel just as welcome when dropping off & picking up dogs too. I wish we found her years ago!! Do yourself & your dogs a favour — Coats By Cole is the ONLY place to go for dog grooming, paws down.",
+      date: "1 month ago"
     },
     {
       id: 3,
-      name: "Jennifer Liu",
+      name: "Michelle Joans",
       rating: 5,
-      text: "I've been taking my two poodles to Nicole for over a year. She does an incredible job with their cuts and they always smell amazing when I pick them up. The salon is clean, she's always on time, and her prices are very reasonable. Couldn't ask for better service!",
-      date: "3 weeks ago",
-      dogPhoto: "https://images.unsplash.com/photo-1535268647677-300dbf3d78d1?w=120&h=120&fit=crop"
+      text: "So happy with Lulu's haircut! She will be back for the same again... my daughter was so impressed, she'll be bringing her pooch to you too!",
+      date: "2 weeks ago"
     },
     {
       id: 4,
-      name: "David Thompson",
+      name: "Jessica Gomersall",
       rating: 5,
-      text: "Nicole groomed my elderly lab mix who has arthritis and some mobility issues. She was so gentle and accommodating, taking breaks when he needed them. He looked great and seemed comfortable the whole time. Thank you for treating senior dogs with such care!",
-      date: "1 week ago",
-      dogPhoto: "https://images.unsplash.com/photo-1517849845537-4d257902454a?w=120&h=120&fit=crop"
+      text: "My Toby looks so beautiful. Highly recommend Nicole for all your poochy grooming needs! Her patience and kindness to each and every individual doggy should be commended! Not only does she do a gorgeous job, she takes her time and cares so deeply for their souls! Thank you so much, Nicole! We will definitely be back! xxxxx",
+      date: "5 days ago"
     },
     {
       id: 5,
-      name: "Amanda Foster",
+      name: "Alice Wolfe",
       rating: 5,
-      text: "My husky sheds like crazy and Nicole's de-shedding treatment is a lifesaver! She gets so much undercoat out and my dog feels so much more comfortable afterward. Plus the teeth cleaning service is fantastic - my vet even commented on how clean his teeth were!",
-      date: "2 months ago",
-      dogPhoto: "https://images.unsplash.com/photo-1581888227599-779811939961?w=120&h=120&fit=crop"
+      text: "Amazing private groomer. My dog Remy has a very wiry coat and came back smelling of bubblegum and feeling like silk. Very reasonable pricing — great for fussy dogs who don't like being groomed.",
+      date: "4 weeks ago"
     },
     {
       id: 6,
-      name: "Robert Chen",
+      name: "Kylie Taylor",
       rating: 5,
-      text: "Brought my corgi puppy for his first grooming experience and Nicole made it so positive. She took her time introducing him to everything and he wasn't scared at all. Now at 8 months old, he runs right into the salon! Great with puppies and new dogs.",
-      date: "3 months ago",
-      dogPhoto: "https://images.unsplash.com/photo-1561037404-61cd46aa615b?w=120&h=120&fit=crop"
-    }
+      text: "Our dog just loves going here. Such a great cut every time. Highly recommend Nicole!",
+      date: "2 months ago"
+    },
+    {
+      id: 7,
+      name: "Tracy Kelsey",
+      rating: 5,
+      text: "Such a gorgeous environment and my boy came out happy and beautifully groomed.",
+      date: "1 week ago"
+    },
   ];
 
   return (
@@ -60,12 +60,9 @@ const Reviews = () => {
       <div className="pt-24 pb-16 px-4">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12 md:mb-16 animate-fade-in">
-            <h1 className="section-title-mobile md:text-5xl font-bold text-white mb-6">
-              Client <span className="text-gold">Reviews</span>
+            <h1 className="section-title-mobile md:text-5xl font-bold gold-shine mb-6">
+              Real Reviews from Our Happy Clients
             </h1>
-            <p className="body-text-mobile text-white/80 px-4">
-              Here's what our clients are saying about their grooming experience
-            </p>
           </div>
 
           {/* Reviews List */}
@@ -76,19 +73,10 @@ const Reviews = () => {
                 className="bg-dark-bg/60 p-6 md:p-8 rounded-lg border border-gold/20 card-hover animate-fade-in"
               >
                 <div className="flex items-start space-x-3 md:space-x-4">
-                  {/* Dog Photo */}
-                  <div className="flex-shrink-0">
-                    <img
-                      src={review.dogPhoto}
-                      alt={`${review.name}'s dog`}
-                      className="w-12 h-12 md:w-16 md:h-16 rounded-full object-cover border-2 border-gold/30"
-                    />
-                  </div>
-
                   {/* Review Content */}
                   <div className="flex-1 min-w-0">
                     <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-3 gap-2">
-                      <h3 className="text-lg md:text-xl font-semibold text-white truncate">
+                      <h3 className="text-lg md:text-xl font-semibold gold-shine truncate">
                         {review.name}
                       </h3>
                       <div className="flex items-center space-x-2 flex-shrink-0">
@@ -104,7 +92,6 @@ const Reviews = () => {
                             </svg>
                           ))}
                         </div>
-                        <span className="text-white/60 text-xs md:text-sm">{review.date}</span>
                       </div>
                     </div>
 

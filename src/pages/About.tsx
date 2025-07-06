@@ -1,4 +1,3 @@
-
 import Navigation from "@/components/Navigation";
 
 const About = () => {
@@ -10,46 +9,40 @@ const About = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12 md:mb-16 animate-fade-in">
             <h1 className="section-title-mobile md:text-5xl font-bold text-white mb-6">
-              About <span className="text-gold">Nicole</span>
+            Welcome to <span className="gold-shine">Coats by Cole</span>
             </h1>
           </div>
 
           <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-center">
-            <div className="animate-fade-in">
-              <div className="bg-gray-800 rounded-lg aspect-square overflow-hidden">
+            <div className="animate-fade-in flex flex-col items-center">
+              <div className="text-white/80 text-sm md:text-base mb-2 text-center font-playfair">“Meet Nicole's own furry best friends”</div>
+              <div className="bg-gray-800 rounded-lg aspect-square overflow-hidden w-full">
                 <img
-                  src="https://images.unsplash.com/photo-1582562124811-c09040d0a901?w=600&h=600&fit=crop"
-                  alt="Nicole with a happy dog"
+                  src="/gallery/1A.jpg"
+                  alt="Nicole's own furry best friends"
                   className="w-full h-full object-cover"
                 />
+              </div>
+              {/* Desktop CTA Button & Text */}
+              <div className="hidden lg:flex flex-col items-center mt-8">
+                <a href="/contact" className="btn-gold-mobile">Book a Meet & Greet</a>
+                <div className="text-white/80 mt-3 text-base">Come meet me in real life with your furry bestfriend.</div>
               </div>
             </div>
 
             <div className="animate-fade-in space-y-6">
               <div className="body-text-mobile text-white/90 leading-relaxed space-y-6 px-4 lg:px-0">
                 <p>
-                  Hi, I'm Nicole, and I've been passionately grooming dogs for over 12 years. 
-                  What started as a love for animals has blossomed into a boutique grooming 
-                  experience that treats every dog like family.
+                  Hi, I'm Nicole — the heart (and hands!) behind Coats by Cole. The name? A playful nod to both my own name and the beautiful coats I get to style every day. I'm a passionate dog groomer and stylist, slowly expanding in the gentle, stress-free bath & bubbles business to keep those pup smiles and coats sparkling!
                 </p>
-                
                 <p>
-                  My approach is simple: create a calm, stress-free environment where your 
-                  pet feels safe and loved. I believe grooming should be a positive experience, 
-                  not a stressful one. That's why I take the time to build trust with each 
-                  furry client, working at their pace and comfort level.
+                  Over the years, my little business has taken breaks for big life chapters like IVF and motherhood, but one thing's always stayed the same — my clients return, tails wagging. Not just for the precision teddy bear cuts, but because I take time to build real relationships — with both the dogs and their humans.
                 </p>
-
                 <p>
-                  I specialize in breed-specific cuts, creative styling, and therapeutic grooming 
-                  for senior dogs or those with special needs. Every dog is unique, and their 
-                  grooming should reflect their personality while keeping them healthy and comfortable.
+                  I believe grooming should be more than just functional — it should feel safe, familiar, and a little bit fabulous. That's why you'll meet my own dogs here before you even see me — a reminder that this space is built for wagging tails, warm hearts, and the kind of trust only pups truly understand.
                 </p>
-
                 <p>
-                  When I'm not at the salon, you'll find me volunteering at local animal rescues 
-                  or spending time with my own rescue dogs, Max and Luna. They're my daily reminder 
-                  of why this work means so much to me.
+                  Whether it's a fresh trim or a bubblegum-scented glow-up, you'll leave with a happy pup and a happy heart.
                 </p>
               </div>
 
@@ -64,6 +57,11 @@ const About = () => {
             </div>
           </div>
         </div>
+      </div>
+      {/* Mobile CTA Button & Text */}
+      <div className="flex flex-col items-center mt-8 mb-16 lg:hidden">
+        <a href="/contact" className="btn-gold-mobile">Book a Meet & Greet</a>
+        <div className="text-white/80 mt-3 text-base text-center">Come meet me in real life with your furry bestfriend.</div>
       </div>
     </div>
   );
