@@ -67,7 +67,7 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				gold: '#d4af37',
-				'dark-bg': '#0a0a0a',
+				'dark-bg': '#000000',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
