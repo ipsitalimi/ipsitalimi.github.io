@@ -27,7 +27,7 @@ const Index = () => {
       {/* Hero Section */}
       <section className="relative min-h-[80vh] flex flex-col items-center justify-center text-center px-4 pt-1 md:pt-20 pb-2 md:pb-16">
         <div className="max-w-4xl mx-auto animate-fade-in w-full flex flex-col items-center">
-          <div className="mb-8 flex justify-center pt-8 md:pt-0">
+          <div className="mb-8 flex justify-center pt-12 md:pt-0">
             <img
               src="/lovable-uploads/569c4579-14f8-4574-ac9c-3a611047a536.png"
               alt="Golden Paws Boutique Logo"
