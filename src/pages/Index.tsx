@@ -28,11 +28,7 @@ const Index = () => {
       <section className="relative min-h-[80vh] flex flex-col items-center justify-center text-center px-4 pt-1 md:pt-20 pb-2 md:pb-16">
         <div className="max-w-4xl mx-auto animate-fade-in w-full flex flex-col items-center">
           <div className="mb-8 flex justify-center pt-12 md:pt-0">
-            <img
-              src="/lovable-uploads/569c4579-14f8-4574-ac9c-3a611047a536.png"
-              alt="Golden Paws Boutique Logo"
-              className="h-40 w-40 md:h-56 md:w-56 object-contain mx-auto drop-shadow-lg"
-            />
+            <img src="/lovable-uploads/569c4579-14f8-4574-ac9c-3a611047a536.png" alt="Golden Paws Boutique Logo" className="h-40 w-40 md:h-56 md:w-56 object-contain mx-auto drop-shadow-lg" />
           </div>
           <h1 className="hero-title-mobile font-bold text-white mb-6 leading-tight text-3xl md:text-5xl">
             Premier <span className="gold-shine">Dog Grooming</span>
@@ -97,29 +93,35 @@ const Index = () => {
           
           {/* Desktop Grid */}
           <div className="hidden sm:grid grid-cols-3 gap-4 mb-8 md:mb-12">
-            {[
-              { src: "/gallery/1.jpg", alt: "Fluffy Shelties after grooming" },
-              { src: "/gallery/3.jpg", alt: "Poodle with green bow after grooming" },
-              { src: "/gallery/8.jpg", alt: "Dog with blue Coats by Cole bandana after grooming" },
-            ].map((img, i) => (
-              <div key={i} className="aspect-square bg-gray-800 rounded-lg overflow-hidden card-hover">
+            {[{
+            src: "/gallery/1.jpg",
+            alt: "Fluffy Shelties after grooming"
+          }, {
+            src: "/gallery/3.jpg",
+            alt: "Poodle with green bow after grooming"
+          }, {
+            src: "/gallery/8.jpg",
+            alt: "Dog with blue Coats by Cole bandana after grooming"
+          }].map((img, i) => <div key={i} className="aspect-square bg-gray-800 rounded-lg overflow-hidden card-hover">
                 <img src={img.src} alt={img.alt} className="w-full h-full object-cover" />
-              </div>
-            ))}
+              </div>)}
           </div>
 
           {/* Mobile Carousel */}
           <div className="sm:hidden carousel-container mb-8">
             <div className="carousel-scroll px-4">
-              {[
-                { src: "/gallery/1.jpg", alt: "Fluffy Shelties after grooming" },
-                { src: "/gallery/3.jpg", alt: "Poodle with green bow after grooming" },
-                { src: "/gallery/8.jpg", alt: "Dog with blue Coats by Cole bandana after grooming" },
-              ].map((img, i) => (
-                <div key={i} className="carousel-item aspect-square bg-gray-800 rounded-lg overflow-hidden mx-auto w-64 sm:w-72 max-w-xs min-w-[80vw]">
+              {[{
+              src: "/gallery/1.jpg",
+              alt: "Fluffy Shelties after grooming"
+            }, {
+              src: "/gallery/3.jpg",
+              alt: "Poodle with green bow after grooming"
+            }, {
+              src: "/gallery/8.jpg",
+              alt: "Dog with blue Coats by Cole bandana after grooming"
+            }].map((img, i) => <div key={i} className="carousel-item aspect-square bg-gray-800 rounded-lg overflow-hidden mx-auto w-64 sm:w-72 max-w-xs min-w-[80vw]">
                   <img src={img.src} alt={img.alt} className="w-full h-full object-cover" />
-                </div>
-              ))}
+                </div>)}
             </div>
           </div>
           
@@ -154,7 +156,7 @@ const Index = () => {
         <div className="max-w-6xl mx-auto text-center">
           <div className="flex items-center justify-center mb-4">
           
-            <span className="gold-shine font-semibold">CoatbyCole</span>
+            <span className="gold-shine font-semibold">CoatsbyCole</span>
           </div>
           <p className="text-white/60">
             © 2025.    Made with ❤️ for our furry friends.
