@@ -57,7 +57,7 @@ const Reviews = () => {
     <div className="min-h-screen bg-dark-bg">
       <Navigation />
       
-      <div className="pt-24 pb-16 px-4">
+      <div className="pt-28 md:pt-24 pb-16 px-4">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12 md:mb-16 animate-fade-in">
             <h1 className="section-title-mobile md:text-5xl font-bold gold-shine mb-6">
