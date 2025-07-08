@@ -111,6 +111,30 @@ const Services = () => {
             </div>
           </section>
 
+          {/* Extras Section */}
+          <section className="mb-16">
+            <h2 className="text-2xl md:text-3xl font-bold gold-shine mb-8">Extras</h2>
+            <div className="bg-black border border-gold rounded-xl shadow-lg shadow-gold/10 p-7 transition-transform hover:scale-[1.025] hover:shadow-xl hover:shadow-gold/20 group hover:border-gold/90 max-w-md mx-auto">
+              <h3 className="text-xl font-bold gold-shine mb-4 group-hover:text-white transition-colors text-center">Additional Services</h3>
+              <table className="w-full text-left">
+                <tbody>
+                  <tr>
+                    <td className="py-2 pr-8 text-white/70 text-sm font-medium">Nails Clipped</td>
+                    <td className="py-2 gold-shine text-sm font-semibold">$10</td>
+                  </tr>
+                  <tr>
+                    <td className="py-2 pr-8 text-white/70 text-sm font-medium">Anal Glands</td>
+                    <td className="py-2 gold-shine text-sm font-semibold">$20</td>
+                  </tr>
+                  <tr>
+                    <td className="py-2 pr-8 text-white/70 text-sm font-medium">Matting Fee</td>
+                    <td className="py-2 gold-shine text-sm font-semibold">Starting from $15</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+
           {/* Book Now Button */}
           <div className="flex justify-center mt-16">
             <Link

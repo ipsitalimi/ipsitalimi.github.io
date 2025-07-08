@@ -29,7 +29,7 @@ const Index = () => {
         <div className="max-w-4xl mx-auto animate-fade-in w-full flex flex-col items-center">
           <div className="mb-8 flex justify-center">
             <img
-              src="/lovable-uploads/c47f6374-7ad2-465d-bbfb-046c5aed3ab1.png"
+              src="/lovable-uploads/569c4579-14f8-4574-ac9c-3a611047a536.png"
               alt="Golden Paws Boutique Logo"
               className="h-40 w-40 md:h-56 md:w-56 object-contain mx-auto drop-shadow-lg"
             />
