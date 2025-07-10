@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const groomingServices = [
   {
     title: "Comfort Clip",
-    description: "13mm or shorter, one length all over. Nails clipped, ears cleaned.",
+    description: "15mm or shorter, one length all over. Nails clipped, ears cleaned.",
     prices: [
       { size: "Small (under 9kg)", price: "$85" },
       { size: "Medium (9–15kg)", price: "$95" },
@@ -14,7 +14,7 @@ const groomingServices = [
   },
   {
     title: "Full Groom",
-    description: "13mm or shorter with a longer/fluffy head. Nails clipped, ears cleaned.",
+    description: "15mm or shorter with a longer/fluffy head. Nails clipped, ears cleaned.",
     prices: [
       { size: "Small (under 9kg)", price: "$90" },
       { size: "Medium (9–15kg)", price: "$110" },
@@ -24,7 +24,7 @@ const groomingServices = [
   },
   {
     title: "Style Groom / Breed Clip",
-    description: "13mm or longer, style of choice. Nails clipped, ears cleaned.",
+    description: "15mm or longer, style of choice. Nails clipped, ears cleaned.",
     prices: [
       { size: "Small (under 9kg)", price: "$100" },
       { size: "Medium (9–15kg)", price: "$120" },
